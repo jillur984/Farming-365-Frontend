@@ -1,6 +1,16 @@
+"use client"
+
 import Image from 'next/image'
 import Onion from "@/public/onion.svg"
+import Carrot from "@/public/carrot.svg"
+import Tomato from "@/public/tomato.svg"
+import Red_Grapes from "@/public/rad_grapes.svg"
+import Garlic from "@/public/garlic.svg"
+import Lettuce from "@/public/lettuce.svg"
 import React from 'react'
+import AddToCart from './AddToCart'
+import Link from 'next/link'
+
 
 const Products = () => {
   return (
@@ -17,25 +27,66 @@ const Products = () => {
        <div className='max-w-[370px] text-center'>
         <h1 className='font-manrope  font-extrabold text-[22px]'>Onlion</h1>
        <p className='font-manrope font-semibold  text-base text-[#4BAF47]'>$20</p>
-       <button className='bg-green-400 p-3 w-full text-[18px]'>Add to Cart</button>
+      
+        <Link href="/login">
+          <AddToCart/>
+        </Link>
+      
        </div>
        
       </div>
       <div className='bg-white/80'>
-       <Image src={Onion}/>
+       <Image src={Tomato}/>
        <div className='max-w-[370px] text-center'>
-        <h1 className='font-manrope  font-extrabold text-[22px]'>Onlion</h1>
+        <h1 className='font-manrope  font-extrabold text-[22px]'>Tomato</h1>
        <p className='font-manrope font-semibold  text-base text-[#4BAF47]'>$20</p>
-       <button className='bg-green-400 p-3 w-full text-[18px]'>Add to Cart</button>
+        <Link href="/login">
+          <AddToCart/>
+        </Link>
        </div>
        
       </div>
       <div className='bg-white/80'>
-       <Image src={Onion}/>
+       <Image src={Carrot}/>
        <div className='max-w-[370px] text-center'>
-        <h1 className='font-manrope  font-extrabold text-[22px]'>Onlion</h1>
+        <h1 className='font-manrope  font-extrabold text-[22px]'>Carrot</h1>
        <p className='font-manrope font-semibold  text-base text-[#4BAF47]'>$20</p>
-       <button className='bg-green-400 p-3 w-full text-[18px]'>Add to Cart</button>
+        <Link href="/login">
+          <AddToCart/>
+        </Link>
+       </div>
+       
+      </div>
+      <div className='bg-white/80'>
+       <Image src={Red_Grapes}/>
+       <div className='max-w-[370px] text-center'>
+        <h1 className='font-manrope  font-extrabold text-[22px]'>Red Grapes</h1>
+       <p className='font-manrope font-semibold  text-base text-[#4BAF47]'>$20</p>
+      <Link href="/login">
+          <AddToCart/>
+        </Link>
+       </div>
+       
+      </div>
+      <div className='bg-white/80'>
+       <Image src={Lettuce}/>
+       <div className='max-w-[370px] text-center'>
+        <h1 className='font-manrope  font-extrabold text-[22px]'>Lettuce</h1>
+       <p className='font-manrope font-semibold  text-base text-[#4BAF47]'>$20</p>
+        <Link href="/login">
+          <AddToCart/>
+        </Link>
+       </div>
+       
+      </div>
+      <div className='bg-white/80'>
+       <Image src={Garlic}/>
+       <div className='max-w-[370px] text-center'>
+        <h1 className='font-manrope  font-extrabold text-[22px]'>Garlic</h1>
+       <p className='font-manrope font-semibold  text-base text-[#4BAF47]'>$20</p>
+        <Link href="/login">
+          <AddToCart/>
+        </Link>
        </div>
        
       </div>
