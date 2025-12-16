@@ -14,7 +14,7 @@ import Link from 'next/link'
 
 const Products = () => {
   return (
-    <section className='my-30 container'>
+    <section className='my-30 container cursor-pointer'>
       <h1 className='text-center font-grace text-2xl text-[#EEC044]'>Recently Added</h1>
       <p className='font-manrope font-extrabold text-center text-[48px]'>Latest Products</p>
 
