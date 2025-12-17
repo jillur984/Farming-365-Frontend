@@ -8,6 +8,8 @@ import Healthy from './components/Healthy'
 import HotDeal from './components/HotDeal'
 import Organic from './components/Organic'
 import Banner from './components/Banner'
+import Testimonials from './components/Testimonials'
+import Blogs from './components/Blogs'
 
 const page = () => {
   return (
@@ -20,6 +22,8 @@ const page = () => {
       <HotDeal/>
       <Organic/>
       <Banner/>
+      <Testimonials/>
+      <Blogs/>
     </div>
   )
 }
