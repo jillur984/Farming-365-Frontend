@@ -10,13 +10,11 @@ import Organic from './components/Organic'
 import Banner from './components/Banner'
 import Testimonials from './components/Testimonials'
 import Blogs from './components/Blogs'
-import Footer from './components/Footer'
+
 
 const page = () => {
   return (
     <div className='overflow-clip'>
-      <Navbar/>
-      <Navbar2/>
       <Hero/>
       <Products/>
       <Healthy/>
@@ -25,7 +23,7 @@ const page = () => {
       <Banner/>
       <Testimonials/>
       <Blogs/>
-      <Footer/>
+     
     </div>
   )
 }
