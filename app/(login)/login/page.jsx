@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Login() {
   return (
     <div  style={{ backgroundImage: "url('/bg_signin.jpg')" }} className="min-h-screen  flex items-center justify-center bg-cover">
@@ -23,6 +25,16 @@ export default function Login() {
           >
             Sign In
           </button>
+          <p className="text-sm text-gray-600 mt-4">
+            <span className="px-3 text-[18px]">Dont have an account?</span>
+            <Link
+              href="/signup"
+              className=" inline-flex items-center rounded-md bg-green-500 px-3 py-1 text-white font-medium
+               hover:bg-green-600 transition-colors duration-200"
+            >
+              Signup
+            </Link>
+          </p>
         </form>
       </div>
     </div>
