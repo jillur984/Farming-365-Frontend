@@ -9,12 +9,12 @@ import Gallery2 from "@/public/gallery2.svg"
 import Gallery3 from "@/public/gallery3.svg"
 import Gallery4 from "@/public/gallery4.svg"
 import Gallery5 from "@/public/gallery5.svg"
-import { useSelector } from "react-redux";
+
 
 const Blogs = () => {
-  const token = useSelector((state) => state.auth.token);
 
-  console.log("Token from Blogs Page",token)
+
+
   return (
     <section className="container py-20 ">
       <div className="text-center my-10">

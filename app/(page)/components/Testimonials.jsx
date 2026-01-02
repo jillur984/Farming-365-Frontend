@@ -1,10 +1,14 @@
+"use client"
 import Image from 'next/image'
 import Testimonial1 from "@/public/testimonial1.svg"
 import Testimonial2 from "@/public/testimonial2.svg"
 import TestimonialAvatar1 from "@/public/testimonial_avatar1.svg"
 import TestimonialAvatar2 from "@/public/testimonial_avatar2.svg"
-
+import { useSelector } from 'react-redux'
 const Testimonials = () => {
+
+  const token=useSelector((state)=>state.auth.token)
+  console.log("Token is",token)
   return (
     <section className='container'>
         <div className='text-center my-10'>

@@ -1,11 +1,13 @@
 "use client"
-
+import Cookies from 'js-cookie';
 import Link from "next/link";
 import { useState } from "react";
-import { setToken } from "@/app/redux/slice/authSlice";
+import { setToken } from "@/app/lib/store/features/auth/authSlice";
 import { useDispatch } from "react-redux";
 
 export default function Login() {
+
+  const dispatch=useDispatch()
 
    // ✅ Add useState for email & password
   const [email, setEmail] = useState("");
@@ -28,9 +30,11 @@ export default function Login() {
       );
 
       const data = await res.json();
-      if (data.token) {
-    dispatch(setToken(data.token)); // store token globally
-  }
+      console.log(data)
+      if(data?.token){
+  dispatch(setToken(data.token))
+  Cookies.set('token', data.token, { path: '/', expires: 7 }) // persist 7 days
+}
 
     } catch (err) {
       console.error("Login error:", err);
@@ -39,6 +43,9 @@ export default function Login() {
   }
 
  
+  
+  
+  
   
   
 

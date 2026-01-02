@@ -1,9 +1,12 @@
 import "../globals.css";
+import StoreProvider from "../storeProvider";
 
 export default function LoginLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <StoreProvider>
+        <body>{children}</body>
+      </StoreProvider>
     </html>
   );
 }
